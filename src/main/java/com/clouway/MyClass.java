@@ -17,6 +17,7 @@ public class MyClass {
         int a = sc.nextInt();
         int b = sc.nextInt();
         int answer = sumator.sumInt(a,b);
+        System.out.println("The answer is: " + answer);
 
         log.info("Sumator was called with " + a + ", " + b + " and the answer is: " + answer);
     }
