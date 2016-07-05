@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyClass.iml" filepath="$PROJECT_DIR$/MyClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildtools.iml" filepath="$PROJECT_DIR$/.idea/modules/buildtools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildtools_main.iml" filepath="$PROJECT_DIR$/.idea/modules/buildtools_main.iml" group="buildtools" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/buildtools_test.iml" filepath="$PROJECT_DIR$/.idea/modules/buildtools_test.iml" group="buildtools" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,40 @@
+import javafx.scene.shape.Path
+
+repositories {
+    mavenCentral()
+}
+
+apply plugin: "java"
+apply plugin: "java-library-distribution"
+
+sourceCompatibility = 1.8
+
+version = '1.0'
+
+sourceSets {
+    test.java.srcDir "src/test/com"
+}
+
+task build(type: Jar) {
+    archiveName = 'MyProject.jar'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
+        attributes 'Main-Class': 'com.clouway.MyClass'
+    }
+}
+
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+task run(type: Exec, dependsOn: jar) {
+    group "run"
+    description "Runs the main class!"
+    executable "java"
+    args "-jar", "$jar.archivePath"
+}
+
