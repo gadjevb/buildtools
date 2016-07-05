@@ -6,9 +6,9 @@ src/
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.ear
+*.java
 
 # User-specific stuff:
 .idea/workspace.xml
@@ -17,8 +17,8 @@ src/
 .idea/vcs.xml
 .idea/misc.xml
 .idea/jsLibraryMappings.xml
-.idea
-.gradle
+.idea/
+.gradle/
 # File-based project format:
 *.iws
 
