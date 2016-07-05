@@ -8,7 +8,7 @@ src/
 # Package Files #
 *.war
 *.ear
-*.java
+*.class
 
 # User-specific stuff:
 .idea/workspace.xml
